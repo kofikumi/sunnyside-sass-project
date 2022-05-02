@@ -157,7 +157,9 @@ main a {
   //   content: '';
   // }
 }
-
+.desktop {
+  display: none;
+}
 @media only screen and (min-width: 48rem) {
   body {
     font-size: 150%;
@@ -240,5 +242,7 @@ main a {
   footer {
   min-height: 20vh;
   }
-  
+  .mobile {
+    display: none;
+  }
 }
