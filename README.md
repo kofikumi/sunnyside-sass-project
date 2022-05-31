@@ -1,1 +1,0 @@
-# sunnyside-sass-project

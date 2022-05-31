@@ -1,14 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
-@use '../abstracts';
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
 $font-size: 1.125rem;
 
 // headings
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Fraunces', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
   margin: 0;
 }
 
@@ -18,5 +22,5 @@ h1 {
 
 //text
 p {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
