@@ -1,0 +1,249 @@
+@use "../abstracts";
+@use "../base";
+
+.transform {
+  background: url(../../assets/mobile/image-transform.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  &-text {
+    min-height: 50vh;
+    padding: 5rem 2rem 0rem;
+    p {
+      color: abstracts.$grayish-blue;
+    }
+  }
+}
+
+.stand-out {
+  background: url(../assets/mobile/image-stand-out.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  &-text {
+    min-height: 50vh;
+    padding: 5rem 2rem 0rem;
+    p {
+      color: abstracts.$grayish-blue;
+    }
+  }
+}
+.graphic-design {
+  background: url(../assets/mobile/image-graphic-design.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  h2,
+  p {
+    color: abstracts.$graphic-design-text;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  &-text {
+    text-align: center;
+    margin: 21rem 1rem 0rem;
+  }
+}
+
+.photography {
+  background: url(../assets/mobile/image-photography.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  h2,
+  p {
+    color: abstracts.$photography-text;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  &-text {
+    text-align: center;
+    margin: 21rem 1rem 0rem;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+aside {
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+    margin: 0rem 0rem;
+    padding: 3rem 0rem;
+    color: abstracts.$dark-grayish-blue;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.client {
+  padding: 0rem 0.78rem;
+  img {
+    width: 5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  div {
+    padding-bottom: 5rem;
+  }
+  h3 {
+    padding: 3rem 0rem 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: abstracts.$very-dark-grayish-blue;
+  }
+  sub {
+    font-family: "Barlow", sans-serif;
+    color: abstracts.$grayish-blue;
+  }
+}
+
+.mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  figure {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+footer {
+  min-height: 50vh;
+  text-align: center;
+  h2 {
+    padding: 2rem;
+    color: abstracts.$graphic-design-text;
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+  }
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: abstracts.$graphic-design-text;
+  }
+}
+
+.social {
+  padding: 5rem;
+  p {
+    display: inline-block;
+    margin: 0;
+    margin-right: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: abstracts.$graphic-design-text;
+  }
+}
+main a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  color: abstracts.$very-dark-grayish-blue;
+  // ::after {
+  //   content: '';
+  // }
+}
+.desktop {
+  display: none;
+}
+@media only screen and (min-width: 48rem) {
+  body {
+    font-size: 150%;
+  }
+  header {
+    background: url(../assets/desktop/image-header.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+  }
+  .landing-page {
+    h1 {
+      font-size: 250%;
+    }
+    .arrow {
+      padding: 8% 50%;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .transform {
+    background: url(../assets/desktop/image-transform.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    &-text {
+      min-height: 20vh;
+      padding: 25% 20%;
+    }
+  }
+  .stand-out {
+    background: url(../assets/desktop/image-stand-out.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/3;
+    min-height: 50vh;
+  }
+  .stand-out-text {
+    grid-row: 2/3;
+    padding: 25% 20%;
+    min-height: 20vh;
+  }
+  .graphic-design {
+    background: url(../assets/desktop/image-graphic-design.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    &-text {
+      padding: 20% 10%;
+    }
+  }
+  .photography {
+    background: url(../assets/desktop/image-photography.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    &-text {
+      padding: 20% 10%;
+    }
+  }
+  .client {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    padding: 0rem 2rem;
+  }
+  .desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    figure {
+      margin: 0;
+    }
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+  footer {
+    min-height: 20vh;
+  }
+  .mobile {
+    display: none;
+  }
+}

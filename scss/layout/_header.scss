@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+@use "../abstracts";
+
+header {
+  background: url(../assets/mobile/image-header.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+  padding: 0.625rem;
+  p {
+    margin: 0;
+    color: abstracts.$white;
+  }
+  h1 {
+    text-align: center;
+    color: abstracts.$white;
+    letter-spacing: 0.6rem;
+  }
+}
+.landing-page {
+  margin-top: 4rem;
+  .arrow {
+    padding: 50% 45%;
+  }
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .logo {
+    align-self: center;
+  }
+}
+
+.mobile-menu {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
